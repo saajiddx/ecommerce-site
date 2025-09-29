@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe Luxe - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .product-card {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .product-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar sticky">
+      <div class="logo">Shoe Luxe</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h2>Our Collection</h2>
+    <div class="product-grid">
+
+      <!-- Casual Sneakers -->
+      <div class="product-card">
+        <a href="product-details.html?product=Casual Sneakers">
+          <img src="Shoes photo/casual.jpeg" alt="Casual Sneakers">
+          <h3>Casual Sneakers</h3>
+          <p>Lightweight sneakers for everyday wear.</p>
+          <span>৳4,999</span>
+        </a>
+        <button onclick="addToCart('Casual Sneakers', 4999)">Add to Cart</button>
+      </div>
+
+      <!-- Running Shoes -->
+      <div class="product-card">
+        <a href="product-details.html?product=Running Shoes">
+          <img src="Shoes photo/running.jpeg" alt="Running Shoes">
+          <h3>Running Shoes</h3>
+          <p>Durable running shoes for maximum performance.</p>
+          <span>৳7,999</span>
+        </a>
+        <button onclick="addToCart('Running Shoes', 7999)">Add to Cart</button>
+      </div>
+
+      <!-- Formal Leather Shoes -->
+      <div class="product-card">
+        <a href="product-details.html?product=Formal Leather Shoes">
+          <img src="Shoes photo/formal.jpeg" alt="Formal Leather Shoes">
+          <h3>Formal Leather Shoes</h3>
+          <p>Elegant formal shoes for business and events.</p>
+          <span>৳9,999</span>
+        </a>
+        <button onclick="addToCart('Formal Leather Shoes', 9999)">Add to Cart</button>
+      </div>
+
+      <!-- Premium High-Tops -->
+      <div class="product-card">
+        <a href="product-details.html?product=Premium High-Tops">
+          <img src="Shoes photo/premium.jpeg" alt="Premium High-Tops">
+          <h3>Premium High-Tops</h3>
+          <p>Stylish high-top sneakers with a modern design.</p>
+          <span>৳8,999</span>
+        </a>
+        <button onclick="addToCart('Premium High-Tops', 8999)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Shoe Luxe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
